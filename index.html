@@ -105,7 +105,20 @@ The ATX has improved on the Baby-AT and LDX motherboard designs, such as:
   <p> BIOS is an acronym that stands for basic input/output system. Most people know ir as device drivers or simply drivers.
   There are three main types of BIOS.
   <li> Motherboard ROM<\li>
-  <li> Adapter card ROMs (found on video card)
+  <li> Adapter card ROMs (found on video card)a<\li>
+  <li> Loaded into RAM from disk(device Drivers)<\li>
+  
+  <p><p>
+  POST (power on self test) loads an OS (operating system) then calls on low-level routines to interact with system hardware.
+  <p> The motherboard ROM (read-only memory) compines any adapter card ROMs, and puts it in with the collective functionality.<p>
+  <p> Drivers are loaded from a disk to RAM and then joined in BIOS so that it is there if needed. Memory is memory (to your computer)<p>
+  <p> so as long as a routine exist and is known, the computer will use it.<p>
+  <p><p>
+  The BIOS id s mix of the motherboard ROM and adapter card ROM, and the device drivers loaded from a disk into RAM. Adding in new drivers to
+  ROM is tricky, as they are hard to change and have limited amount of space. The PC architecture only holds up to 256KB max amount of ROM space.<p>
+  <p>Applications talk to the OS by what is called application programming interface (API). API is different depending on your OS/ API only interacts with
+  the OS, not the hardware. The OS then comunicates with BIOS in the driver layer. As many know, a OS can run on any type of hardware.
+  The most differnce between the hardware is the system itself. BIOS covers up what the difference is.<p>
    </body>
   
 </html>
