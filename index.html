@@ -181,14 +181,25 @@ If it helps, think of a rail as a disconnect power circuit, kind of like a power
 <p><p>
 <h2>VOLTAGE REGULATORS</h2>
 <p> <p>
-Older DDR (double data rate) dual inline memory modules (DIMMS) and Rambus inline memory (RIMMS) require 2.5V, where the DDR2 and DDR3 DIMMS require 1.8V and 1.5V, legacy AGP 4x/8x cards require 1.5V, and current PCI Express cards use only 0.8V different signaling – all of which are supplied by simple on the board regulators. Processors also require a variety of voltage (as low as 1.3V or less) that are supplied by a sophisticated voltage regulator module (VRM) that is either built in or plugged in to the motherboard. You’ll commonly find three or more different voltage regulator circuits on the modern motherboard.
+Older DDR (double data rate) dual inline memory modules (DIMMS) and Rambus inline memory (RIMMS) require 2.5V, where the DDR2 and DDR3 DIMMS require 1.8V and 1.5V, legacy AGP 4x/8x cards require 1.5V, and current PCI Express cards use only 0.8V different signaling<p> 
+– all of which are supplied by simple on the board regulators. Processors also require a variety of voltage (as low as 1.3V or less) that are supplied by a sophisticated voltage regulator module (VRM) that is either built in or plugged in to the motherboard. <p>
+You’ll commonly find three or more different voltage regulator circuits on the modern motherboard.
+<p><p>
 NEGATIVE DC VOLTAGE
+<p><p>
 Positive voltage seems to power everything, and in reality they do. -5 were removed from the ATX12V 1.3 and later specifications. The only reason that it remained in the power supply designs was for backwards compatibility. 
+<p><p>
 THE POWER GOOD SIGNAL 
-The Power_Good signal is sometimes called the Power_OK or PWR_OK is a +5V (normal) active high signal (with a variation from +2.4V through +6.0V generally being considered satisfactory) that is supplied to the motherboard when the power supply has passed its internal self-tests and the output voltage have stabilized. This typically takes anywhere from 100ms to 500ms (0.1-0.5 seconds) after you turn on the power supply switch. It then sends the PWR_OK signal to the motherboard where the processor timer chip that controls the rest line to the processor receives it.
-In the absence of PWR_OK, the timer chip holds the reset line on the processor, which prevents the system from running under bad or unstable power conditions. When the timer chip receives the PWR_OK signal it releases the rest and the processor beings executing whatever code is at address FFF0h (occupied by the motherboard ROM).
+<p><p>
+The Power_Good signal is sometimes called the Power_OK or PWR_OK is a +5V (normal) active high signal (with a variation from +2.4V through +6.0V generally being considered satisfactory) that is supplied to the motherboard when the power supply has passed its internal self-tests and the output voltage have stabilized.<p> 
+This typically takes anywhere from 100ms to 500ms (0.1-0.5 seconds) after you turn on the power supply switch. It then sends the PWR_OK signal to the motherboard where the processor timer chip that controls the rest line to the processor receives it.
+In the absence of PWR_OK, the timer chip holds the reset line on the processor, which prevents the system from running under bad or unstable power conditions. When the timer chip receives the PWR_OK signal it releases the rest and the processor beings <p>
+executing whatever code is at address FFF0h (occupied by the motherboard ROM).<p>
+<p><p>
 POWER SUPPLY FORM FACTORS
-Industry-standard form factors have many perks, they have interchangeable parts so that there is a better range of choices for replacement parts when you need them, which means more often than not, better pricing. Plugging the power supply connectors into the motherboard is one thing, but for the power supply to work in the system, it must physically fit inside the chassis or case-and that is what is different in form factors.
+<p><p>
+Industry-standard form factors have many perks, they have interchangeable parts so that there is a better range of choices for replacement parts when you need them, which means more often than not, better pricing. Plugging the power supply connectors into the motherboard is one thing, <p>
+but for the power supply to work in the system, it must physically fit inside the chassis or case-and that is what is different in form factors.
 <p> <p>
 <h2> Chapter 7
   ATA Interface
