@@ -155,6 +155,43 @@ memory. For a logical partition that uses shared memory, a subset of the logical
 storage and whatever the remaining logical memory is left over is kept in auxiliary storage. To update a physical memory on a computer is relatively simple. 
 As long as it is upgradable (some computers, phones, and tablets are no upgradable) you can go anywhere online or in person and get another memory chip. 
 In contrast, the logical memory generally does not get upgraded as it is not needed.
+<p> <p>
+<h2> Chapter  18
+  <p> <h2> Power</h2>
+</h2>
+<p> <p> 
+<h2> PRIMARY FUNCTION AND OPERATION</h2
+The basic idea of a power supply is to convert electrical power available at the wall socket to that which the computer circuitry can actually use. The regular power supply is designed either 120V (normal) to 60Hz AC (alternating current) or 240V (normal) and 50Hz AC power into +3.3v, +5v AMD +2v (direct current) power. Some requires you to switch between input ranges but others have an auto-switch.
+Power supply is described as a constant voltage switching power supply unit (PSU), which is defined as follows:
+	Constant voltage means power supply puts out the same voltage to the computer’s internal components, no matter the voltage of AC that is currently running it or the capacity (wattage) of the power supply.
+	Switching is talking about the design and power regulation techniques that most suppliers use. Compared to other types of power types, this design allows an efficient and inexpensive power source and generates a minimum amount of heat. It also maintains a small size and lo price.
+VOLTAGE RAILS
+The PSU normally supplies +3.3V, +5V, and +12V to the system. These voltage is often called rails, referring to the fact that although there are multiple wires are used, if all of the current were carried over a single wire, and the wire and terminals, connectors and even the traces on the circuit boards would all have to be extremely large and thick to handle the load. Instead, it is cheaper and more efficient to spread the load out among multiple smaller and thinner wires, i.e. rails.
+The digital electronic components and circuits in the system (motherboard, adapter cards, and disk drive logic boards) typically use the +3.3V or the +5V power, where the motors (disk drive motors and any fans) use the +12V power. Additionally, voltage regulators in the motherboard or in other components convert these standard voltages to others as necessary. 
+<li> SIMM=         Single line Memory Module <\li>
+<li>DIMM=         Dual inline Memory Module<\li>
+<li>?PCI=			    Peripheral Component Interconnect<\li>
+<li>AGP=		    	Accelerated Graphics Port<\li>
+<li>ISA=          Industry Standard Architecture<\li>
+<p> <p>
+If it helps, think of a rail as a disconnect power circuit, kind of like a power supply within the power supply.
+<p><p>
+<p><p>
+<p><p>
+<h2>VOLTAGE REGULATORS</h2>
+<p> <p>
+Older DDR (double data rate) dual inline memory modules (DIMMS) and Rambus inline memory (RIMMS) require 2.5V, where the DDR2 and DDR3 DIMMS require 1.8V and 1.5V, legacy AGP 4x/8x cards require 1.5V, and current PCI Express cards use only 0.8V different signaling – all of which are supplied by simple on the board regulators. Processors also require a variety of voltage (as low as 1.3V or less) that are supplied by a sophisticated voltage regulator module (VRM) that is either built in or plugged in to the motherboard. You’ll commonly find three or more different voltage regulator circuits on the modern motherboard.
+NEGATIVE DC VOLTAGE
+Positive voltage seems to power everything, and in reality they do. -5 were removed from the ATX12V 1.3 and later specifications. The only reason that it remained in the power supply designs was for backwards compatibility. 
+THE POWER GOOD SIGNAL 
+The Power_Good signal is sometimes called the Power_OK or PWR_OK is a +5V (normal) active high signal (with a variation from +2.4V through +6.0V generally being considered satisfactory) that is supplied to the motherboard when the power supply has passed its internal self-tests and the output voltage have stabilized. This typically takes anywhere from 100ms to 500ms (0.1-0.5 seconds) after you turn on the power supply switch. It then sends the PWR_OK signal to the motherboard where the processor timer chip that controls the rest line to the processor receives it.
+In the absence of PWR_OK, the timer chip holds the reset line on the processor, which prevents the system from running under bad or unstable power conditions. When the timer chip receives the PWR_OK signal it releases the rest and the processor beings executing whatever code is at address FFF0h (occupied by the motherboard ROM).
+POWER SUPPLY FORM FACTORS
+Industry-standard form factors have many perks, they have interchangeable parts so that there is a better range of choices for replacement parts when you need them, which means more often than not, better pricing. Plugging the power supply connectors into the motherboard is one thing, but for the power supply to work in the system, it must physically fit inside the chassis or case-and that is what is different in form factors.
+<p> <p>
+<h2> Chapter 7
+  ATA Interface
+</h2>
 
   
    </body>
