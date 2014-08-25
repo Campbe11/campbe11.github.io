@@ -206,48 +206,59 @@ but for the power supply to work in the system, it must physically fit inside th
 </h2>
 <p><p>
   <h2>ATA-1 (ATA Interface for Disk Drivers)</h2>
-	40/44-pin connectors and cabling
-	<p>Master/slave or cable select drive configuration optionsp>M
-    p>Mignal timing for basic programmed I/O (PIO) and direct memory access (DMA) modesp>
-	C<Mylinder, head, sector (CHS) and logical block addresses (LBA) drive parameter translations supporting drive capacities up to 2/28-to2/20 (267,386,880) sectors, or 136.9GBp>M
-  
+  <p> <p>
+	40/44-pin connectors and cabling <p>
+	<p>Master/slave or cable select drive configuration options <p>
+    p>Mignal timing for basic programmed I/O (PIO) and direct memory access (DMA) modes <p>
+	C<Mylinder, head, sector (CHS) and logical block addresses (LBA) drive parameter translations supporting drive capacities up to 2/28-to2/20 (267,386,880) sectors, or 136.9GBps <p>
+  <p> <p>
 </h2>ATA-2(ATA Interface with Extensions-2)</h2>
-	<p>Faster PIO and DMA transfer modes
-	Support for power management
-	Support for removable devices
-	PCMCIA(PC Card) device support
-	Identify Drive command that reports more information
-	Defined standard CHS/LBA translation methods for drives up to 8.4GB in capacity
+		Faster PIO and DMA transfer modes  <p>
+	Support for power management <p>
+	Support for removable devices <p>
+	PCMCIA(PC Card) device support <p>
+	Identify Drive command that reports more information <p>
+	Defined standard CHS/LBA translation methods for drives up to 8.4GB in capacity <p>
+<p> <p>
 </h2>ATA-3(ATA Interface-3)</h2>
-	Eliminated single-word (8-bit) DMA transfer protocols
-	Added S.M.A.R.T. (Self-monitoring,, Analysis, and Reporting Technology) support for prediction or device performance degradation
-	Made LBA mode support mandatory (previously, it has been optional)
-	Added ATA Security mode, allowing password protection for device access
-	Provided recommendations for source and receiver bus termination to solve noise issues at higher transfer speeds
+<p> <p>
+	Eliminated single-word (8-bit) DMA transfer protocols <p>
+	Added S.M.A.R.T. (Self-monitoring,, Analysis, and Reporting Technology) support for prediction or device performance degradation <p>
+	Made LBA mode support mandatory (previously, it has been optional) <p>
+	Added ATA Security mode, allowing password protection for device access <p>
+	Provided recommendations for source and receiver bus termination to solve noise issues at higher transfer speeds <p>
+<p> <p>
 </h2>ATA/ATAPI-4(ATA with Packet Interface Extension-4)</h2>
-	Ultra-DMA (UDMA) or Ultra-ATA/33) transfer modes up to Mode 2, which is 33MBps(called UDMA/33 or Ultra-ATA/33)
-	Intergral ATAPI support
-	Advanced power management support
-	An optional 80-conductor, 40-pin cable defined for improving noise resistance
-	Host protected area (HPA) support
-	Compact Flash Adapter (CFA) support
-	Enhanced BIOS support for drives over 9.4ZB (zettabyets or trillion gigabytes) in size(even though ATA was still limited to 136.9GB)
+<p> <p>
+	Ultra-DMA (UDMA) or Ultra-ATA/33) transfer modes up to Mode 2, which is 33MBps(called UDMA/33 or Ultra-ATA/33) <p>
+	Intergral ATAPI support <p>
+	Advanced power management support <p>
+	An optional 80-conductor, 40-pin cable defined for improving noise resistance <p>
+	Host protected area (HPA) support <p>
+	Compact Flash Adapter (CFA) support <p>
+	Enhanced BIOS support for drives over 9.4ZB (zettabyets or trillion gigabytes) in size(even though ATA was still limited to 136.9GB) <p>
+<p> <p>
 </h2>ATA/ATAPI-5(ATA with Packet Interface-5)</h2>
-	Ultra-DMA (UDMA) transfer modes up to Mode 4, which is 66MBps (called UDMA/66 or Ultra-ATA/66)
-	80-conductor cable now mandatory for UDMMA/66 operation
-	Automatic detection of 40- or 80-conductor cables
-	UDMA modes faster than UDMA/33 enabled only if an 80-conductor cable is detected
+<p> <p>
+	Ultra-DMA (UDMA) transfer modes up to Mode 4, which is 66MBps (called UDMA/66 or Ultra-ATA/66) <p>
+	80-conductor cable now mandatory for UDMMA/66 operation <p>
+	Automatic detection of 40- or 80-conductor cables <p>
+	UDMA modes faster than UDMA/33 enabled only if an 80-conductor cable is detected <p>
+<p> <p>
 </h2>ATA/ATAPI-6(ATA with Packet Interface-6)</h2>
-	Ultra-DMA (UDMA) Mode 5 added, which allows 100MBps (called USMA/100, Ultra-ATA/100, or just ATA/100 transfers
-	Sector count per command increased from 8 bits (256 sectors, or 131 KB)  to 16 bits (65,536 sectors, or 33.5MB) allowing large files to be transferred more efficiently
-	LBA addressing extended from 228 to 248 (281,474,976,710,656) sectors, supporting drives up to 114.12PB (petabytes=quadrillion bytes). This feature is often referred to as 48-bit LBA or greater than 137GB support by vendors; Maxtor referred to this feature as Big Dive.
-	CHS addressing was made obsolete; drives must use 28-bit or 48-bit LBA addressing only 
-</h2>ATA/ATAPI-7(ATA with Packet Interface-7)</h2>
-	The inclusion of SATA 2.x and 3.x for serial transport (physical) and command set functions 
-	The replacement of read long/write long functions
-	Improved HPA management via additional HPA-related commands
-	Defined IDENTIFY DEVICE word 217 to report drive rotational speed (rpm) where a value of 1 indicates non-rotating media (sold-state drive)
-	Addition of the TRIM command for flash-based sold-state drives (SSDS). This allows the system to inform an SSD which blocks are no longer in use so they can be erased in preparation for future writes
+<p> <p>
+	Ultra-DMA (UDMA) Mode 5 added, which allows 100MBps (called USMA/100, Ultra-ATA/100, or just ATA/100 transfers <p>
+	Sector count per command increased from 8 bits (256 sectors, or 131 KB)  to 16 bits (65,536 sectors, or 33.5MB) allowing large files to be transferred more efficiently <p>
+	LBA addressing extended from 228 to 248 (281,474,976,710,656) sectors, supporting drives up to 114.12PB (petabytes=quadrillion bytes). This feature is often referred to as 48-bit LBA or greater than 137GB support by vendors; Maxtor referred to this feature as Big Dive. <p>
+	CHS addressing was made obsolete; drives must use 28-bit or 48-bit LBA addressing only <p>
+<p> <p>
+</h2>ATA/ATAPI-7(ATA with Packet Interface-7)</h2> 
+<p> <p>
+	The inclusion of SATA 2.x and 3.x for serial transport (physical) and command set functions <p>
+	The replacement of read long/write long functions <p>
+	Improved HPA management via additional HPA-related commands <p>
+	Defined IDENTIFY DEVICE word 217 to report drive rotational speed (rpm) where a value of 1 indicates non-rotating media (sold-state drive) <p>
+	Addition of the TRIM command for flash-based sold-state drives (SSDS). This allows the system to inform an SSD which blocks are no longer in use so they can be erased in preparation for future writes <p>
 
    </body>
   
