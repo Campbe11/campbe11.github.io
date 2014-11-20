@@ -594,6 +594,57 @@ PROCESSOR INTERGRATED VIDEO-
 
 <a>These requirements are needed for every network, no matter how big or how small. </a>
 
+<h2> Script from JS Bin</h2>
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <<script>
+    
+$('#validate').on('click', function(){
+  
+  var password=$("#password").val();
+
+
+
+  var l=password.length;
+ 
+  if(l >= 15){
+   alert('Password is strong');
+    
+    
+    
+  }else if(l >= 10){
+    alert('Password is mild');
+  
+ 
+  }else if(l >= 5){
+    
+   alert('Password is weak');
+  
+    
+  }else{
+  alert('Please enter in password');
+  } 
+  
+
+});
+  
+  </script>
+</head>
+<body>
+  Enter in Password
+  <br> </br>
+  <input id="password"> </input>
+  <br> </br>
+  <button id="validate"> Validate </button>
+
+
+</body>
+</html>
    </body>
   
 </html>
